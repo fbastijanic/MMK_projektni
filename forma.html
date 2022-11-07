@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title></title>
+    <style type="text/css">
+body {
+  background-color: #24303c;
+}
+
+.naslov {
+  font-family: "Avenir";
+  color: white;
+  font-weight: bold;
+}
+
+.paragrafi {
+  font-family: "Avenir";
+  color: white;
+  font-weight: normal;
+  width: 1000px;
+  margin-left: 10px;
+}
+
+.navigacija {
+  font-weight: lighter;
+  font-family: "Avenir";
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: #334455;
+}
+
+.nav1 {
+  font-weight: bold;
+  display: inline;
+  float: left;
+  color: #050205;
+}
+
+li a {
+  display: block;
+  color: white;
+  padding: 8px;
+  background-color: #334455;
+}
+
+li a:hover {
+  background-color: #161d24;
+}
+
+.drugalista {
+  font-family: impact;
+  font-weight: normal;
+  color: white;
+  text-transform: none;
+  text-decoration: none;
+  font-size: 120%;
+}
+
+#tekst1 {
+  font-size: 110%;
+  font-weight: bold;
+  font-family: "Kefa";
+  color: red;
+}
+
+ol {
+  display: inline-block;
+}
+
+.trecalista {
+  font-weight: normal;
+  font-family: "Verdana";
+}
+      
+      form {
+    width: 500px;
+    padding: 20px;
+    background-color: #ffff54;
+    border: 6px double #c24400;
+    border-radius: 10px;
+}
+
+input, fieldset, select {
+    font-size: 14px;
+    width: 97%;
+    padding: 15px;
+    margin: 10px;
+    background-color: rgba(255,255,255,.5);
+    border: 2px solid #c24400;
+    box-sizing: border-box;
+}
+
+input:focus {
+    background-color: #ffcf66;;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+}
+
+fieldset input {
+    width: 10%;
+}
+fieldset label {
+    display: inline-block;
+    width: 80%;
+}
+
+input[type="submit"], input[type="reset"] {
+    width: 100px;
+    height: 50px;
+    padding: 2px;
+    margin-left: 10px;
+    box-shadow: 3px 3px 3px #c24400;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    box-shadow: 3px 5px 3px #802d00;
+}
+
+input[type="color"] {
+    height: 60px;
+    padding: 2px;
+}
+
+</style> </head>
+  <body>
+    <h1 style="text-align: center;" class="naslov" id="naslov">Kontakt
+      forma</h1>
+    <ul class="navigacija">
+      <li class="nav1"><a href="index.html">Početna</a></li>
+      <a href="#pocetna"> </a>
+      <li class="nav1"><a href="#pocetna">Slike</a></li>
+      <a href="#pocetna"> </a>
+      <li class="nav1"><a href="tablice.html">Tablice</a></li>
+      <a href="#pocetna"> </a>
+      <li class="nav1"><a href="forma.html">Kontakt</a></li>
+      <a href="#pocetna"> </a>
+    </ul>
+    <p class="nav1"><br>
+    </p>
+    <p class="paragrafi">Ovo je dio vjezbe koji sadrzi formu</p>
+    <hr><br>
+    <center>
+      <form action=""> <label for="ime">Ime</label> <input id="ime" placeholder="Vaše ime..."
+          autofocus=""
+          required=""
+          type="text">
+        <label for="prezime">Prezime</label> <input id="prezime" placeholder="Vaše prezime..."
+          required=""
+          type="text">
+        <label for="lozinka">Password</label> <input id="lozinka" maxlength="10"
+          required=""
+          type="password">
+        <label for="email">E-mail</label> <input id="email" required="" type="email">
+        <label for="web">Web adresa</label> <input id="web" placeholder="grf.unizg.hr"
+          type="url">
+        <label for="rodjendan">Datum rođenja</label> <input id="rodjendan" type="date">
+        <label for="mobilni">Mobilni telefon</label> <input id="mobilni" type="number">
+        <fieldset> <legend>Spol</legend> <input value="M" id="M" name="spol" type="radio"><label
+            for="M">muški</label>
+          <input value="F" id="F" name="spol" type="radio"><label for="F">ženski</label>
+        </fieldset>
+        <fieldset> <legend>Obavezni kolegiji</legend> <input value="ORP" id="ORP"
+            name="obvezni"
+            type="radio"><label
+            for="ORP">ORP</label>
+          <input value="RF1" id="RF1" name="obvezni" type="radio"><label for="RF1">RF1</label>
+          <input value="TF1" id="TF1" name="obvezni" type="radio"><label for="TF1">ORP</label>
+          <input value="MK1" id="MK1" name="obvezni" type="radio"><label for="MK1">ORP</label>
+        </fieldset>
+        <label for="izborni">Izaberite jedan izborni kolegij</label>
+        <select name="izborni">
+          <option>Kolegij 1</option>
+          <option>Kolegij 2</option>
+          <option>Kolegij 3</option>
+        </select>
+        <label for="boja">Odaberite najdražu boju</label> <input id="boja" name="boja"
+          type="color">
+        <label for="poruka">Poruka</label> <input id="poruka" name="poruka" type="text">
+        <input value="Poništi" type="reset"> <input value="Prihvati" type="submit">
+      </form>
+    </center>
+  </body>
+</html>
